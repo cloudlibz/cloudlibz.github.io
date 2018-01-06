@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudlibz</title>
+    <description>Cloudlibz&#39;s main focus is to have a central place for all the cloud-related projects of SCoRe lab
+</description>
+    <link>https://cloudlibz.github.io//</link>
+    <atom:link href="https://cloudlibz.github.io//feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 06 Jan 2018 14:53:22 +0530</pubDate>
+    <lastBuildDate>Sat, 06 Jan 2018 14:53:22 +0530</lastBuildDate>
+    <generator>Jekyll v3.1.6</generator>
+    
+  </channel>
+</rss>

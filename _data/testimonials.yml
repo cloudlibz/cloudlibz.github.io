@@ -1,0 +1,16 @@
+- name: Person1
+  title: Excellent Review
+  testimonial: "This company created an e-commerce site with the tools to make our business a success, with innovative ideas. We feel that our site has unique elements that make us stand out from the crowd."
+  image: img/item-img1.jpg
+- name: Person2
+  title: Amazing Review
+  testimonial: "An e-commerce site was created by this company with the tools to make our business a success, with innovative ideas. We feel that our site has unique elements that make us stand out from the crowd."
+  image: img/item-img1.jpg
+- name: Person3
+  title: Fantastic Review
+  testimonial: "With the tools to make our business a success, this company created an e-commerce site, with innovative ideas. We feel that our site has unique elements that make us stand out from the crowd."
+  image: img/item-img1.jpg
+- name: Person4
+  title: Superb Review
+  testimonial: "We feel that our site has unique elements that make us stand out from the crowd. This company created an e-commerce site with the tools to make our business a success, with innovative ideas."
+  image: img/item-img1.jpg

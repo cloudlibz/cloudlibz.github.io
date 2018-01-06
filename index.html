@@ -1,64 +1,115 @@
-<!DOCTYPE html>
-<!-- 
-  Theme Name: Frame
-  Theme URL: https://probootstrap.com/frame-free-onepage-html5-template-using-bootstrap
-  Author: ProBootstrap.com
-  Author URL: https://probootstrap.com
-  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
--->
-<html lang="en">
+---
+layout: page
+title: Cloudlibz
+permalink: /
+---
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CloudLibz</title>
-  <meta name="description" content="CloudLibz">
-  <meta name="keywords" content="Cloud, API, AWS, Google, Azure">
-
-  <link rel="stylesheet" href="css/styles-merged.css">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-  <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
-</head>
-
-<body>
-
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-default probootstrap-navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"
-          aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="index.html" title="CloudLibz">CloudLibz</a>
-      </div>
-
-    </div>
-  </nav>
-
-  <section class="probootstrap-hero" style="background-image: url(img/image_1.jpg);" data-section="home" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row intro-text">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <h1 class="probootstrap-heading probootstrap-animate">Unified Cloud. All the tools you need to be cloud savy.</h1>
-          <h4>Stay tuned for more updates</h4>
+<!-- Slider Start -->
+<section id="slider">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-2">
+        <div class="block">
+          <h1 class="animated fadeInUp"><b>Unified Cloud. <br> All the tools you need to be cloud savy.</b></h1>
+          <p class="animated fadeInUp">We love the Cloud and the work we do. We deliver the best possible solutions for the problems faced during managing cloud projects</p>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+<!-- Wrapper Start -->
+<section id="intro">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7 col-sm-12">
+        <div class="block">
+          <div class="section-title">
+            <h2>About Us</h2>
+            <p>Cloud is about how you do computing, not where you do computing. </p>
+          </div>
+          <p>In Cloudlibz, the main focus is to have a central place for all the cloud-related projects of SCoRe (Sustainable Computing Research Group) lab. We provide all the tools necessary to make you cloud savy, meaning that managing your cloud projects is now easier, smarter and more efficient using the tools that we provide. Being an open source organisation, our code base is transparent and anyone who wishes to contribute to our journey towards a smarter cloud savy generation can check out our <a href="https://github.com/cloudlibz/" target="blank">github page</a>.</p>
+        </div>
+      </div><!-- .col-md-7 close -->
+      <div class="col-md-5 col-sm-12">
+        <div class="block">
+          <img src="img/wrapper-img.png" alt="Img">
+        </div>
+      </div><!-- .col-md-5 close -->
+    </div>
+  </div>
+</section>
 
-
-  <script src="js/scripts.min.js"></script>
-  <script src="js/custom.js"></script>
-
-</body>
-
-</html>
+<section id="feature">
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-6">
+      <h2>WE BELIEVE IN GREAT IDEAS</h2>
+      <p>We've already implemented a number of tools to help you and have various ideas stored in the think-tank, each one coming out of it only when we see potential in it</p>
+      <p><b><u>Nodecloud</u></b> is a standard library to get a single API among common cloud service providers (Ex. AWS, GCP, Azure.. ). This will make building products among multiple cloud services and its services easier for the developer.</p>
+      <p><b><u>Gocloud</u></b> is a golang library which hides differences between different cloud providers (AWS,GCP,Openstack etc) APIs and allows you to manage different cloud resources through a unified and easy to use API.</p>
+      <a href="#" class="btn btn-view-works">View Works</a>
+    </div>
+  </div>
+</div>
+</section>
+<!-- Call to action Start -->
+<section id="call-to-action">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="block">
+          <h2>We design delightful digital experiences.</h2>
+          <p>Read more about what we do and our philosophy of cloud. Judge for yourself The work and results we’ve achieved for other clients, and chat with highly experienced members of our team and contributors of our projects.</p>
+          <a class="btn btn-default btn-call-to-action" href="https://gitter.im/cloudlibz/home" target="blank" >Chat on Gitter</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Content Start -->
+<section id="testimonial">
+  <div class="container">
+    <div class="row">
+      <div class="section-title text-center">
+        <h2>Our presence in the community</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-6">
+        {% if site.data.funfacts.size > 0 %}
+        <div class="block">
+          {% for ff in site.data.funfacts %}
+          <ul class="counter-box clearfix">
+            <li>
+              <div class="block">
+                <i class="{{ ff.icon }}"></i>
+                <h4 class="counter">{{ ff.counter }}</h4>
+                <span>{{ ff.text }}</span>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </div>
+        {% endif %}
+      </div>
+      <div class="col-md-6">
+        {% if site.data.testimonials.size > 0 %}
+        <div class="testimonial-carousel">
+          <div id="testimonial-slider" class="owl-carousel">
+            {% for tm in site.data.testimonials %}
+            <div>
+                <img src="img/cotation.png" alt="IMG">
+                <p>{{ tm.testimonial }}</p>
+                <div class="user">
+                  <img src="{{ tm.image }}" alt="Pepole">
+                  <p><span>{{ tm.name }}</span> {{ tm.title }}</p>
+                </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+        {% endif %}
+      </div>
+    </div>
+  </div>
+</section>
