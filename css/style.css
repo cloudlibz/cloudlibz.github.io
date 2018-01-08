@@ -402,15 +402,18 @@ h1 span{
 }
 
 .about-us p{
-  text-align:center;
-  font-size:14px;
-  width:250px;
-  margin:30px auto;
-  color:#a4a4a4;
-  line-height:26px;
-  letter-spacing:0;
-  position:relative;
-  font-weight:300;
+	text-align:center;
+	font-size:14px;
+	width:650px;
+	color:#a4a4a4;
+	line-height:26px;
+	letter-spacing:0;
+	position:relative;
+	font-weight:300;
+	margin-top: 30px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-left: auto;
 }
 
 .about-us .column-one{
