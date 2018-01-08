@@ -103,12 +103,12 @@ h1 span{
   position:relative;
   width:100%;
   height:100%;
-  z-index:10;
   background:url('../img/background/start-page.jpg') #c0c0c0 bottom center fixed no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index:10;
 }
 
 .start-page hr{
@@ -140,12 +140,16 @@ h1 span{
   position:absolute;
   text-align:center;
   margin:auto;
-  top:-16px; 
-  left:1px; 
+  top:0; 
+  left:0; 
   bottom:0; 
   right:0;
   width:700px;
   height:520px;
+}
+
+.start-page .content .text img{
+  width:123px
 }
 
 .start-page .content .text .logo{
@@ -184,8 +188,8 @@ h1 span{
 
 .start-page .content .arrow-down{
   position: absolute;
-  bottom: 88px;
-  left: 346px;
+  bottom: 110px;
+  left: 50%;
   margin-left: -10px;
   width: 21px;
   height: 29px;
@@ -298,7 +302,7 @@ h1 span{
    color:#333;
    font-weight:700;
    font-size:24px;
-   width:auto;
+   width:300px;
    line-height:60px;
    float:left;
    list-style: none;
@@ -587,6 +591,7 @@ h1 span{
 
 .grid li{
   width:285px;
+  height:224px;
   margin:0 15px 15px 0;
   float: left;
   position: relative;
@@ -594,27 +599,24 @@ h1 span{
 }
 
 .grid img{
-  width:285px;
+  width: 100%;
+  height:224px;
   float: left;
   position: relative;
 }
 
 .grid .text {
-	position: absolute;
-	width: 285px;
-	height:166px;
-	background: rgba(173,160,116,1);
-	z-index: 2;
-	opacity:0;
-
-
+  position: absolute;
+  width: 285px;
+  height:100%;
+  background: rgba(173,160,116,1);
+  z-index: 2;
+  opacity:0;
     -webkit-transition: all 0.6s ease-in;
 	-moz-transition: all 0.6s ease-in;
 	-ms-transition: all 0.6s ease-in;
 	-o-transition: all 0.6s ease-in;
 	transition: all 0.6s ease-in;
-	top: 29px;
-	left: 0px;
 }
 
 .grid .text:hover {
@@ -628,21 +630,13 @@ h1 span{
   background: rgba(173,160,116,0.5);
   z-index: 2;
   opacity:0;
-  -webkit-transition: all 0.6s ease-in;
-	-moz-transition: all 0.6s ease-in;
-	-ms-transition: all 0.6s ease-in;
-	-o-transition: all 0.6s ease-in;
-	transition: all 0.6s ease-in;
-}
-
-.grid .no-text:hover {
-  opacity:1;
 }
 
 .grid p {
   font-size: 18px;
   text-align:center;
   line-height:26px;
+  padding:0 20px;
   margin-top:40px;
   font-weight: bold;
   letter-spacing:1px;
@@ -651,7 +645,6 @@ h1 span{
 
 .grid p.description {
   font-size: 12px;
-  width:300px;
   margin-top:20px;
   text-align:center;
   line-height:20px;
@@ -669,13 +662,13 @@ h1 span{
 .partners{
   position:relative;
   width:100%;
-  z-index:10;
   height:400px;
   background:url('../img/background/partners.jpg') 0px 0px fixed;
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  z-index:10;
 }
 
 .partners .opacity{
@@ -744,6 +737,7 @@ h1 span{
   margin: 60px auto 65px auto;
 }
 
+
 .contact h1{
   font-size:34px;
   color:black;
@@ -753,6 +747,7 @@ h1 span{
   font-weight:bold;
   text-transform:uppercase;
   line-height:1.2;
+
 }
 
 .contact hr{
@@ -928,4 +923,9 @@ input.submit{
   font-size:14px;
   line-height:36px;
   color:#a4a4a4;
+}
+
+.footer .copyright a{
+  color:#a4a4a4;
+  text-decoration:none;
 }
