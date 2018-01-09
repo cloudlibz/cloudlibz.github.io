@@ -3,7 +3,7 @@
 	font-family:'Raleway',sans-serif;
 }
 .landing-fixed{
-	background-image:url("cbg.png");
+	background-image:url("img/cbg.png");
 	background-size:cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat; 
