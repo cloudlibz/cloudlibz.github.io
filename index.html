@@ -1,65 +1,196 @@
 <!DOCTYPE html>
-<!-- 
-  Theme Name: Frame
-  Theme URL: https://probootstrap.com/frame-free-onepage-html5-template-using-bootstrap
-  Author: ProBootstrap.com
-  Author URL: https://probootstrap.com
-  License: Released for free under the Creative Commons Attribution 3.0 license (probootstrap.com/license)
--->
 <html lang="en">
-
 <head>
-  <meta name="google-site-verification" content="C-JFChTFm_MVnzqUPgH1f93XvfSt9munyDZNmaLmkWo" />
+  <title>CLOUD LIBZ</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>CloudLibz</title>
-  <meta name="description" content="CloudLibz">
-  <meta name="keywords" content="Cloud, API, AWS, Google, Azure">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+    /* Remove the navbar's default margin-bottom and rounded borders */
+    .navbar {
+      margin-bottom: 0;
+      border-radius: 0;
+    }
+    
+    .image {
+   position: relative;
+   width: 100%; /* for IE 6 */
+}
+h2{
+  position:absolute;
+  top:200px;
+  left:0;
+  width:100%;
+}
 
-  <link rel="stylesheet" href="css/styles-merged.css">
-  <link rel="stylesheet" href="css/style.min.css">
-  <link rel="stylesheet" href="fonts/icomoon/style.css">
+h2 span {
+   color: white;
+   font: bold 24px/45px Helvetica, Sans-Serif;
+   letter-spacing: -1px;
+   background: rgb(0, 0, 0); /* fallback color */
+   background: rgba(0, 0, 0, 0.7);
+   padding: 10px;
+}
+.left {
+    margin:left;
+    width: 60%;
+    padding: 10px;
+    text-align:left;
 
-  <!--[if lt IE 9]>
-      <script src="js/vendor/html5shiv.min.js"></script>
-      <script src="js/vendor/respond.min.js"></script>
-    <![endif]-->
+}
+div.background {
+  background: url("https://wallup.net/wp-content/uploads/2016/07/20/34501-gradient-blurred-minimalism.jpg")repeat;
+  border: 2px solid black;
+}
+div.transbox {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+  margin: 5%;
+  font-weight: bold;
+  color: #000000;
+}
+
+    /* Add a gray background color and some padding to the footer */
+    footer {
+      background-color: #f2f2f2;
+      padding: 25px;
+    }
+  </style>
 </head>
-
 <body>
 
-  <!-- Fixed navbar -->
-  <nav class="navbar navbar-default probootstrap-navbar">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"
-          aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-        <a class="navbar-brand" href="index.html" title="CloudLibz">CloudLibz</a>
-      </div>
-
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">CLOUD LIBZ</a>
     </div>
-  </nav>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">PROJECTS</a></li>
+        <li><a href="https://gitter.im/cloudlibz/home">CHAT ON GITTER</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-  <section class="probootstrap-hero" style="background-image: url(img/image_1.jpg);" data-section="home" data-stellar-background-ratio="0.5">
-    <div class="container">
-      <div class="row intro-text">
-        <div class="col-md-8 col-md-offset-2 text-center">
-          <h1 class="probootstrap-heading probootstrap-animate">Unified Cloud. All the tools you need to be cloud savy.</h1>
-          <h4>Stay tuned for more updates</h4>
+<div class="jumbotron">
+  <div class="container text-center">
+    <div class="image">
+    <img src="D:\what-is-cloud-computing-large.jpg" class="img-responsive" style="width:100%" "height:100%" alt="Image">
+    <h2><span>CLOUD LIBZ <br/> UNIFIED CLOUD <br/> ALL the tools you need to be cloud savy.</span> </h2>
+  </div>
+
+  </div>
+</div>
+
+<div class="container-fluid bg-3 text-center">
+  <h1>JUST SOME OF OUR LATEST PROJECTS</h1><br>
+  <div class="row">
+    <div class="col-sm-3">
+      <p>GoCloud</p>
+      <img src="D:\logo (1).png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="col-sm-3">
+      <p>NODE CLOUD</p>
+      <img src="D:\logo (2).png" class="img-responsive" style="width:100%" alt="Image">
+    </div>
+    <div class="row"
+    <h2 style="text-align:center;">Vendors we have unified include</h2>
+          <div id="clients-logo" class="owl-carousel">
+            <div class="clients-logo-img">
+              <img src="D:\icon-cloud-aws.png" alt="Amazon Web Services" height="100">
+           </div>
+            <div class="clients-logo-img">
+              <img src="D:\google-cloud-logo.png" alt="Google Cloud" height="100">
+           </div>
+            <div class="clients-logo-img">
+              <img src="D:\microsoft-azure-640x401.png" alt="Microsoft Azure" height="100">
+            </div>
+            <div class="clients-logo-img">
+             <img src="D:\rackspace_logo_08_07_20122.jpg" alt="Rackspace" height="100">
+            </div>
+            <div class="clients-logo-img">
+              <img src="D:\OpenShift-LogoType.svg.png" alt="Openshift" height="100">
+            </div>
+          </div>
+  </div>
+</div>
+
+<div class="post">
+  <div class="image">
+    <img src="D:\cloudcomputing-course1image_378x225.jpg" class="img-responsive" align="left" width="50%" height="50%">
+<h1>ABOUT US</h1>
+<h4 align="right">Cloud is about how you do computing,not where  you do computing. </h4>
+<p align="right">In cloud libz, the main focus is to have central place for all the cloud-related projectsof SCoRE (Sustainable Computing Research Group)lab.<br>
+We provide all the tools necessary to make you cloud savy,meaning that managing your cloud projects is now easier,smarter and more efficient using the tools that we provide.</p></br>
+<a href="https://github.com/cloudlibz/cloudlibz.github.io">For more information you can visit this page.</a>
+</div>
+
+<div class="post">
+  <div class="left">
+  <h1>WE BELIEVE IN GREAT IDEAS </h1>
+  <p><b> We've always implemented a number of tools to help you and have various ideas stored in the think tank,each coming out of it only when we see potential on it.</p></b>
+  <br>
+  <p><b>Node cloud is a standard library to get a single API among common cloud service providers(Ex.AWS,Azure,GCP...)This will make building products among multiple <br>
+    cloud providers and its services easier for the developer.</p></br></b>
+  </br>
+  <br>
+  <p><b>Go cloud is a golang library which hides differences between different cloud providers (AWS,GCP,OPENSTACK etc.)API and allows you to manage different cloud <br>
+    resources through a UNIFIED API and easy to use API.</p></br></b>
+  </br>
+  <button onclick="window.location.href='https://github.com/cloudlibz/cloudlibz.github.io'">VIEW TASKS</button>
+</div>
+</div>
+
+<div class="background">
+  <div class="transbox">
+    <h1>We design delightful experiences.</h1>
+    <p><b>Read more about what we do and our philosophy of cloud.Judge for yourself the work and the results we've achieved for other clients,and chat with highly experienced members of our team and contributors of our projects. SO LETS BEGIN YOUR CHATTING!!</p></b>
+  <button onclick="window.location.href='https://gitter.im/cloudlibz/home'"><b>CHAT ON GITTER</b></button>
+  </div>
+</div>
+
+<footer class="container-fluid text-center">
+  <h1>OUR PRESENCE IN THE COMMUNITY </h1>
+  <div class="row">
+    <div class="col-sm-3">
+      <p align="center"><b>10000 CUPS OF COFFEE </b> </p>
+      <img src="D:\join-conversation.png" class="img-responsive" align="center" style="width:20%" alt="image">
+    </div>
+    <div class="row">
+      <div class="col-sm-3">
+        <p align="center"><b>1000 HOURS OF CODING </b></p>
+        <img src="D:\13694-200.png" class="img-responsive" align="center" style="width:20%" alt="image">
+      </div>
+      <div class="row">
+        <div class="col-sm-3">
+          <p align="center"><b>10 upcoming projects of it </b></p>
+          <img src="D:\46395.png" class="img-responsive" align="center" style="width:20%" alt="image">
         </div>
-      </div>
-    </div>
-  </section>
-
-
-  <script src="js/scripts.min.js"></script>
-  <script src="js/custom.js"></script>
+        <div class="row">
+          <div class="col-sm-3">
+            <p align="center"><b>2 Tools already built </b></p>
+            <img src="D:\download (3).png" class="img-responsive" align="center" style="width:20%" alt="image">
+          </div>
+</footer>
 
 </body>
-
 </html>
