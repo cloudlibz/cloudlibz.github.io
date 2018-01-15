@@ -108,8 +108,10 @@ li{
     text-decoration: none;
 }
 nav{
-	background:none;
+	background-color:ehite;
 	margin-bottom:-5%;
+	padding:2%;
+	color:#000;
 	padding-top:28px;
 	z-index:10;
 }
@@ -197,6 +199,7 @@ nav{
 .fivez{
 	width:65%;
 	height:65%;
+	margin-top:30px;
 }
 .fiveone{
 	margin-left:78%;
