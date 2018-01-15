@@ -25,6 +25,14 @@
     link: https://facebook.com
     new_window: true
     social_icon: Facebook
+  - name: Mail
+    link: info@scorelab.org
+    new_window: true
+    social_icon: Gmail
+  - name: Github
+    link: https://github.com/scorelab
+    new_window: true
+    social_icon: Github
   - name: Gitter
     link: https://gitter.im
     new_window: true
@@ -32,6 +40,10 @@
   - name: Twitter
     link: https://twitter.com
     social_icon: Twitter
+    new_window: true
+  - name: YouTube
+    link: https://youtube.com
+    social_icon: YouTube
     new_window: true
   - name: RSS
     link: /feed.xml
