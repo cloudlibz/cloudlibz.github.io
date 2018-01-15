@@ -1,80 +1,73 @@
 ---
-title: The final Cloud Services you'll ever need
-description: API's compatible with any cloud based services
+title: Products
+heading: Find the perfect prouduct for your business
+description: All plans include our amazing cloud libraries.
+pricing_table:
+  - name: NodeCloud
+    color: "#8e8e8e"
+    src: <img src="/images/dashboard.png" alt="Screenshot" class="screenshot editable">
+    features:
+      - text: NodeCloud is a standard library to get a single API among common cloud service providers (Ex. AWS, GCP, Azure.. ). This will make building products among multiple cloud services and its services easier for the developer.
+        highlight: true
+    call_to_action:
+      link: https://github.com/cloudlibz/nodecloud
+      text: Get started
+  
+  - name: GoCloud
+    color: "#4a4a4a"
+    src: <img src="/images/dashboard1.png" alt="Screenshot" class="screenshot editable">
+    features:
+      - text: GoCloud is a golang library which eliminates differences between different cloud providers' (AWS,GCP,Openstack etc) APIs and allows you to manage different cloud resources through a unified and easy to use API.
+        highlight: true
+    call_to_action:
+      link: https://github.com/cloudlibz/gocloud
+      text: Get started
+    
+faq:
+  - answer: 
+  - question: 
+    answer: 
+  - question: 
+    answer: 
+  - question: 
+    answer: 
+  - question: 
+    answer: 
 ---
-<section class="hero">
-	<div class="text-container">
-		<h1 class="editable">The final Cloud Services <strong>you'll ever need</strong></h1>
-		<p class="subtext editable">API's compatible with any cloud based services.</p>
-		<div class="cta button alt"><a href="/sign-up/">Get Started Free</a></div>
-		<div>
-			<img src="/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
-		</div>
-	</div>
-</section>
+<div class="plans">
+	{% for plan in page.pricing_table %}
+		<ul class="plan">
+			<li style="background: {{ plan.color }}">
+				<h3><strong>{{ plan.name }}</strong></h3>		<div class="image">{{plan.src}}</div> 
+			</li> 
 
-<div class="content">
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2>How do you improve cloud computing <strong>quality</strong>?</h2>
-				<p>Cloudlibz is the Answer</p>
-			</div>
-			<div class="image">
-				<img src="/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
-			</div>
-			<div class="image">
-				<img src="/images/dashboard1.png" alt="Screenshot" class="screenshot editable" />
-			</div>
+			{% for feature in plan.features %}
+                    
+				<li {% if feature.highlight %} class="highlighted"{% endif %}>{{ feature.text }}</li>
+			{% endfor %}
 
-		</div>
-	</section>
-
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2>So what is <strong>CloudLibz</strong>?</h2>
-				<p>CloudLibz is an initative to bring together all the cloud projects at SCoRe <br/>
-  		It provides the necessary tools for you to be cloud savvy and makes <br/>
-managing your projects effortless and easy</p>
-			</div><div class="text editable">
-				<h2><strong>NodeCloud</strong>?</h2>
-				<p>NodeCloud is a standard library to get a single API among common cloud service providers (Ex. AWS, GCP, Azure.. ). This will make building products among multiple cloud services and its services easier for the developer.</p>
-			</div>
-
-			<div class="image">
-				<img src="/images/dashboard.png" alt="Screenshot" class="screenshot editable" />
-			</div>
-		</div>
-	</section>
-
-	<section>
-		<div class="container flex">
-			<div class="text editable">
-				<h2><strong>GoCloud</strong></h2>
-				<p>GoCloud is a golang library which eliminates differences between different cloud providers' (AWS,GCP,Openstack etc) APIs and allows you to manage different cloud resources through a unified and easy to use API.</p>
-			</div>
-
-			<div class="image">
-				<img src="/images/dashboard1.png" alt="Screenshot" class="screenshot editable" />
-			</div>
-		</div>
-	</section>
-
-	<section class="testimonial">
-		<div class="container flex">
-			<div class="testimonial-block">
-				<div class="square-image"><img src="https://avatars2.githubusercontent.com/u/28682735?s=460&v=4" alt="Moses Paul" class="editable"></div>
-				<blockquote>
-					<p class="editable">I Recommend CloudLibz</p>
-					<p class="editable author">Moses Paul - CEO of MosesCorp.</p>
-				</blockquote>
-			</div>
-		</div>
-	</section>
-
-	<section class="bottom-cta">
-		<h2 class="editable"><strong>Improve</strong> your cloud services</h2>
-		<div class="button alt"><a href="#">Get Started Today</a></div>
-	</section>
+			{% if plan.call_to_action %}
+				<li class="pricing-cta"><div class="button"><a style="background: {{ plan.color }}" href="{{ plan.call_to_action.link }}">{{ plan.call_to_action.text }} &rarr;</a></div></li>
+			{% endif %}
+		</ul>
+	{% endfor %}
 </div>
+          <h2 style="text-align:center;"><strong>Vendors We Support</strong><br></br>
+              <img src="/images/aws.png" alt="Amazon Web Services" style="width:300px;height:100px;">
+              <img src="/images/google-cloud.png" alt="Google Cloud" style="width:300px;height:100px;">
+              <img src="/images/azure.png" alt="Microsoft Azure" style="width:300px;height:100px;">
+              <img src="/images/rackspace.png" alt="Rackspace" style="width:300px;height:100px;">
+              <img src="/images/openshift.png" alt="Openshift" style="width:300px;height:100px;">
+</h2>
+<br></br>
+{% if page.faq %}
+	<h2><strong>Product FAQ</strong></h2>
+	<dl class="faq">
+		{% for item in page.faq %}
+			<div>
+				<dt>{{ item.question }}</dt>
+				<dd>{{ item.answer }}</dd>
+			</div>
+		{% endfor %}
+	</dl>
+{% endif %}
