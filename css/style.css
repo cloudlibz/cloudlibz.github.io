@@ -95,11 +95,15 @@ li{
     text-decoration: none;
 }
 nav{
-	margin-bottom:1%;
-	padding-bottom:0.5%;
-	color:#000;
-	padding-top:28px;
-	z-index:10;
+	padding-bottom: 30px;
+    color: #000;
+    padding-top: 53px;
+    z-index: 10;
+}
+.header-logo {
+	height: 70px;
+    position: absolute;
+    top: 0px;
 }
 .spec-link{
   margin-right:820px;
