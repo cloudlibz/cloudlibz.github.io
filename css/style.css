@@ -116,6 +116,11 @@ nav{
 	margin-top:-20%;
 	color:#757575;
 }
+.para-two{
+	line-height:2; 
+	margin-top:-20%;
+	color:#757575;
+}
 .image-one{
 	padding-top:6%;
     padding-left:3%; 
@@ -124,7 +129,9 @@ nav{
 	margin-left:-14%;
 }
 .subone-fixed{
-	padding-bottom:16%;
+	margin-top:30%;
+}
+.subtwo-fixed{
 	margin-top:10%;
 }
 .heading-two{
@@ -144,7 +151,7 @@ nav{
 .heading-two-tres{
 	font-size:50px;
 	line-height:1.3;	
-	margin-left:32%;
+	margin-left:25%;
 	margin-top:16%;
 	color:#757575;
 }
@@ -514,4 +521,34 @@ footer{
 .txt{
 	padding-top: 2px;
 }
+.row .row-content{
+	width: 74%;
+}
 
+.row .row-content .gitter{
+	display: inline-block;
+	width: 33%;
+	
+}
+
+.row .row-content .gitter img{
+	height: 150px;
+}
+.row .row-content .forum{
+	display: inline-block;
+	width: 33%;
+	
+}
+
+.row .row-content .forum img{
+	height: 150px;
+}
+.row .row-content .github{
+	display: inline-block;
+	width: 33%;
+	
+}
+
+.row .row-content .github img{
+	height: 150px;
+}
