@@ -6,42 +6,67 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:,100" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
+ <div id="side-menu" class="side-nav">
+    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+    <a href="#">Home</a>
+    <a href="#about">About</a>
+    <a href="#products">Products</a>
+    <a href="#vendors">Vendors</a>
+    <a href="https://github.com/cloudlibz/gsoc/wiki/Google-Summer-of-Code-2018---Ideas-page">GSoC</a>
+    <a href="#community">Community</a>
 
+  
+  </div>
 <body>
-	<div class="navi">
-		<nav>
-			<ul>
-				<br/>
-				<li>
-					<a href="#" class="spec-link">
-						<img src="img/1.png" class="header-logo">
-					</a>
-				</li>
-				<li>
-					<a href="#" class="nav-link">Home</a>
-				</li>
-				<li>
-					<a href="#about" class="nav-link">About</a>
-				</li>
-				<li>
-					<a href="#products" class="nav-link">Products</a>
-				</li>
-				<li>
-					<a href="#vendors" class="nav-link">Vendors</a>
-				</li>
-				<li>
-					<a href="https://github.com/cloudlibz/gsoc/wiki/Google-Summer-of-Code-2018---Ideas-page" class="nav-link">GSoC</a>
-				</li>
-				<li>
-					<a href="#community" class="nav-link">Community</a>
-				</li>
-			</ul>
-		</nav>
-	</div>
-	<div class="landing-fixed">
+	<nav class="navbar" id="bar">
+
+    <span class="open-slide">
+      <a href="#" onclick="openSlideMenu()">
+        <svg width="50" height="50" >
+            <path id="stroke1" d="M0,5 30,5" stroke="#fff" stroke-width="3"/>
+            <path  id="stroke1"d="M0,14 30,14" stroke="#fff" stroke-width="3"/>
+            <path  id="stroke1"d="M0,23 30,23" stroke="#fff" stroke-width="3"/>
+        </svg>
+      </a>
+    </span>
+    
+
+  </nav>
+
+ 
+
+
+
+  <script>
+    function openSlideMenu(){
+      document.getElementById('side-menu').style.width = '250px';
+      document.getElementById('main').style.marginLeft = '250px';
+    }
+
+    function closeSlideMenu(){
+      document.getElementById('side-menu').style.width = '0';
+      document.getElementById('main').style.marginLeft = '0';
+    }
+
+window.onscroll = function() {myFunction()};
+
+var navbar = document.getElementById("bar");
+var sticky = navbar.offsetTop;
+
+function myFunction() {
+  if (window.pageYOffset >= sticky) {
+    navbar.classList.add("sticky")
+  } else {
+    navbar.classList.remove("sticky");
+  }
+}
+
+  </script>
+	
+	<div class="landing-fixed ">
 		<h1 class="heading-one">Cloudlibz</h1>
 		<h3 class="heading-tres">Unified Cloud, All the tools you need</h1>
-			<a href="#about" class="button">Know more</a>
+			<center><a href="#about" class="button">Know more</a></center>
 	</div>
 	<div class="subone-fixed">
 		<!-- <div class="subone-images">
@@ -116,24 +141,31 @@
 	<div class="contact" align="center" id="community">
 		<div class="form" id="contact">
 			<h1 class="testimonials-text" align="center">Awesome Community</h1>
+			<br>
+			<br>
 			<div class="row">
 				<div class="row-content">
 					<div class="gitter">
 						<a href="https://gitter.im/cloudlibz/cloudlibz">
 							<img src="img/gitter.jpg" alt="">
-							<H1>Gitter</H1>
+																				<p>Gitter</p>
+
+							
 						</a>
+
+
 					</div>
 					<div class="forum">
 						<a href="https://groups.google.com/forum/#!forum/cloudlibz">
 							<img src="img/google-groups-1.png" alt="">
-							<h1>Mail Forum</h1>
-						</a>
+												<p>Mail Forum</p>	</a>
+													
 					</div>
 					<div class="github">
 						<a href="https://github.com/cloudlibz/">
 							<img src="img/github.png" alt="">
-							<h1>Github</h1>
+																				<p>GitHub</p>
+
 						</a>
 					</div>
 				</div>
