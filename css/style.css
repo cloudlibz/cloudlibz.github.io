@@ -3,7 +3,7 @@
 	font-family:'Raleway',sans-serif;
 }
 .landing-fixed{
-	background-image:url("cbg.png");
+	background-image:url("cbg.jpg");
 	background-size:cover;
 	background-attachment:fixed;
 	background-repeat:no-repeat; 
@@ -16,7 +16,7 @@
 	font-weight:lighter;
 	font-size:80px;
 	color:white;
-	padding-left:40%;
+	text-align: center;
 	padding-top:25%;
 	margin-bottom:6%;
 }
@@ -27,7 +27,7 @@
 	font-size:30px;
 	margin-top:-5%;
 	margin-bottom:5%;
-	padding-left:35%;
+	text-align: center;
 }
 a{
 	text-decoration:none;
@@ -41,11 +41,12 @@ a{
   padding-bottom:10px;
   padding-left:18px;
   padding-right:18px;
-  margin-left:45%;
+
   font-size:18px;
   text-transform:uppercase;
-  position:relative;
+
   z-index:1;
+
   }
 .button:after{
 	content: "";
@@ -76,24 +77,7 @@ li{
 .navi{
 	margin-top:-3%;
 }
-.nav-link{
-	display:inline;
-	color:#000;
-	text-transform:uppercase;
-	font-size:15px;
-	font-weight:bold;
-	padding-top:10px;
-	padding-bottom:15px; 
-	padding-left:7px;
-	padding-right:7px;
-    margin-right:14px;
-    margin-top:-1000px;
-}
-.nav-link:hover{
-	border-color: none;
-	color:#757575;
-    text-decoration: none;
-}
+
 nav{
 	padding-bottom: 30px;
     color: #000;
@@ -133,6 +117,7 @@ nav{
 }
 .subtwo-fixed{
 	margin-top:10%;
+
 }
 .heading-two{
 	font-size:50px;
@@ -519,36 +504,114 @@ footer{
 	align-content:center;
 }
 .txt{
-	padding-top: 2px;
+	padding-t
+	op: 2px;
 }
 .row .row-content{
 	width: 74%;
 }
 
 .row .row-content .gitter{
-	display: inline-block;
-	width: 33%;
+		display: inline-block;
+	width: 13%;
+	
 	
 }
 
 .row .row-content .gitter img{
-	height: 150px;
+	height: 60px;
 }
 .row .row-content .forum{
 	display: inline-block;
-	width: 33%;
+	width: 13%;
 	
 }
 
 .row .row-content .forum img{
-	height: 150px;
+	height: 60px;
 }
 .row .row-content .github{
-	display: inline-block;
-	width: 33%;
+		display: inline-block;
+	width: 13%;
+	
 	
 }
 
 .row .row-content .github img{
-	height: 150px;
+	height: 60px;
+}
+body{
+  font-family:"Arial", Serif;
+  background-color:#f4f4f4;
+  overflow-x:hidden;
+}
+
+.navbar{
+  
+  overflow:hidden;
+  position: fixed;
+
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+  height: 30px;
+  width: 30px;
+
+
+
+}
+
+
+
+
+.side-nav{
+  height:100%;
+  width:0;
+  position:fixed;
+  z-index:1;
+  top:0;
+  left:0;
+  background-color:#111;
+  opacity:0.9;
+  overflow-x:hidden;
+  padding-top:60px;
+  transition:0.5s;
+}
+
+.side-nav a{
+  padding:10px 10px 10px 30px;
+  text-decoration:none;
+  font-size:22px;
+  color:#ccc;
+  display:block;
+  transition:0.3s;
+}
+
+.side-nav a:hover{
+  color:#fff;
+  background-color:#050505 ;
+}
+
+.side-nav .btn-close{
+  position:absolute;
+  top:0;
+  right:22px;
+  font-size:36px;
+  margin-left:50px;
+}
+
+#main{
+  transition:margin-left 0.5s;
+
+  
+  width:100%;
+}
+
+@media(max-width:568px){
+  .navbar-nav{display:none}
+}
+
+@media(min-width:568px){
+  /*.open-slide{display:none}*/
 }
