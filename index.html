@@ -6,63 +6,65 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway:,100" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
- <div id="side-menu" class="side-nav">
-    <a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-    <a href="#">Home</a>
-    <a href="#about">About</a>
-    <a href="#products">Products</a>
-    <a href="#vendors">Vendors</a>
-    <a href="https://github.com/cloudlibz/gsoc/wiki/Google-Summer-of-Code-2018---Ideas-page">GSoC</a>
-    <a href="#community">Community</a>
+<div id="side-menu" class="side-nav">
+	<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
+	<a href="#">Home</a>
+	<a href="#about">About</a>
+	<a href="#products">Products</a>
+	<a href="#vendors">Vendors</a>
+	<a href="https://github.com/cloudlibz/gsoc/wiki/Project-Ideas---GSoC-2019" target="_blank">GSoC</a>
+	<a href="#community">Community</a>
 
-  
-  </div>
+
+</div>
+
 <body>
 	<nav class="navbar" id="bar">
 
-    <span class="open-slide">
-      <a href="#" onclick="openSlideMenu()">
-        <svg width="50" height="50" >
-            <path id="stroke1" d="M0,5 30,5" stroke="#fff" stroke-width="3"/>
-            <path  id="stroke1"d="M0,14 30,14" stroke="#fff" stroke-width="3"/>
-            <path  id="stroke1"d="M0,23 30,23" stroke="#fff" stroke-width="3"/>
-        </svg>
-      </a>
-    </span>
-    
+		<span class="open-slide">
+			<a href="#" onclick="openSlideMenu()">
+				<svg width="50" height="50">
+					<path id="stroke1" d="M0,5 30,5" stroke="#fff" stroke-width="3" />
+					<path id="stroke1" d="M0,14 30,14" stroke="#fff" stroke-width="3" />
+					<path id="stroke1" d="M0,23 30,23" stroke="#fff" stroke-width="3" />
+				</svg>
+			</a>
+		</span>
 
-  </nav>
 
- 
+	</nav>
 
 
 
-  <script>
-    function openSlideMenu(){
-      document.getElementById('side-menu').style.width = '250px';
-      document.getElementById('main').style.marginLeft = '250px';
-    }
 
-    function closeSlideMenu(){
-      document.getElementById('side-menu').style.width = '0';
-      document.getElementById('main').style.marginLeft = '0';
-    }
 
-window.onscroll = function() {myFunction()};
+	<script>
+		function openSlideMenu() {
+			document.getElementById('side-menu').style.width = '250px';
+			document.getElementById('main').style.marginLeft = '250px';
+		}
 
-var navbar = document.getElementById("bar");
-var sticky = navbar.offsetTop;
+		function closeSlideMenu() {
+			document.getElementById('side-menu').style.width = '0';
+			document.getElementById('main').style.marginLeft = '0';
+		}
 
-function myFunction() {
-  if (window.pageYOffset >= sticky) {
-    navbar.classList.add("sticky")
-  } else {
-    navbar.classList.remove("sticky");
-  }
-}
+		window.onscroll = function () {
+			myFunction()
+		};
 
-  </script>
-	
+		var navbar = document.getElementById("bar");
+		var sticky = navbar.offsetTop;
+
+		function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+				navbar.classList.remove("sticky");
+			}
+		}
+	</script>
+
 	<div class="landing-fixed ">
 		<h1 class="heading-one">Cloudlibz</h1>
 		<h3 class="heading-tres">Unified Cloud, All the tools you need</h1>
@@ -77,13 +79,13 @@ function myFunction() {
 			<div class="row">
 				<p class="para-two" align="center">
 					<font class="heading-two">What is CloudLibz ?</font>
-					<br/>
-					<br/> CloudLibz focuses on building products around cloud.
-					<br/> It provides the necessary tools for you to be cloud savvy and makes
-					<br/> managing your projects effortless and easy. We develop products around 
-					<br/> unifying cloud environments, tools around cloud automation and 
-					<br/> serverless architecture.
-					<br/>
+					<br />
+					<br /> CloudLibz focuses on building products around cloud.
+					<br /> It provides the necessary tools for you to be cloud savvy and makes
+					<br /> managing your projects effortless and easy. We develop products around
+					<br /> unifying cloud environments, tools around cloud automation and
+					<br /> serverless architecture.
+					<br />
 				</p>
 			</div>
 
@@ -95,7 +97,8 @@ function myFunction() {
 			<div class="card">
 				<div class="card__info">
 					<h2 class="card__info_title">Nodecloud</h2>
-					<p class="card__info_text"> NodeCloud is a standard library written in Node.JS. to get a single API among common cloud service providers (Ex. AWS, GCP, Azure.. ). This
+					<p class="card__info_text"> NodeCloud is a standard library written in Node.JS. to get a single API among common
+						cloud service providers (Ex. AWS, GCP, Azure.. ). This
 						will make building products among multiple cloud services and its services easier for the developer.</p>
 				</div>
 				<figure class="card__image">
@@ -107,7 +110,8 @@ function myFunction() {
 			<div class="card">
 				<div class="card__info">
 					<h2 class="card__info_title">Gocloud</h2>
-					<p class="card__info_text"> GoCloud is a standard library written in GoLang to get a single API among common cloud service providers (Ex. AWS, GCP, Azure.. ). This
+					<p class="card__info_text"> GoCloud is a standard library written in GoLang to get a single API among common cloud
+						service providers (Ex. AWS, GCP, Azure.. ). This
 						will make building products among multiple cloud services and its services easier for the developer.</p>
 				</div>
 				<figure class="card__image">
@@ -120,7 +124,7 @@ function myFunction() {
 
 	<div class="subtwo-fixed" id="vendors">
 		<font class="heading-two-tres">Cloud providers unified by CloudLibz</font>
-		<br/>
+		<br />
 		<div class="firstone">
 			<img src="img/l1.png" class="logoz onez">
 		</div>
@@ -148,9 +152,9 @@ function myFunction() {
 					<div class="gitter">
 						<a href="https://gitter.im/cloudlibz/cloudlibz">
 							<img src="img/gitter.jpg" alt="">
-																				<p>Gitter</p>
+							<p>Gitter</p>
 
-							
+
 						</a>
 
 
@@ -158,13 +162,14 @@ function myFunction() {
 					<div class="forum">
 						<a href="https://groups.google.com/forum/#!forum/cloudlibz">
 							<img src="img/google-groups-1.png" alt="">
-												<p>Mail Forum</p>	</a>
-													
+							<p>Mail Forum</p>
+						</a>
+
 					</div>
 					<div class="github">
 						<a href="https://github.com/cloudlibz/">
 							<img src="img/github.png" alt="">
-																				<p>GitHub</p>
+							<p>GitHub</p>
 
 						</a>
 					</div>
@@ -174,10 +179,10 @@ function myFunction() {
 
 		<footer align="center">
 			<p class="txt">
-				<br/>&nbsp;&nbsp;&nbsp;CloudLibz.
-				<br/>
-				<br/>© Copyright 2018 Cloudlibz.
-				<br/>
+				<br />&nbsp;&nbsp;&nbsp;CloudLibz.
+				<br />
+				<br />© Copyright 2018 Cloudlibz.
+				<br />
 		</footer>
 </body>
 
