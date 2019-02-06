@@ -4,81 +4,46 @@
 <head>
 	<title>Cloudlibz</title>
 	<link href="https://fonts.googleapis.com/css?family=Raleway:,100" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/style.css">
 </head>
-<div id="side-menu" class="side-nav">
-	<a href="#" class="btn-close" onclick="closeSlideMenu()">&times;</a>
-	<a href="#">Home</a>
-	<a href="#about">About</a>
-	<a href="#products">Products</a>
-	<a href="#vendors">Vendors</a>
-	<a href="https://github.com/cloudlibz/gsoc/wiki/Project-Ideas---GSoC-2019" target="_blank">GSoC</a>
-	<a href="#community">Community</a>
-
-
-</div>
 
 <body>
-	<nav class="navbar" id="bar">
-
-		<span class="open-slide">
-			<a href="#" onclick="openSlideMenu()">
-				<svg width="50" height="50">
-					<path id="stroke1" d="M0,5 30,5" stroke="#fff" stroke-width="3" />
-					<path id="stroke1" d="M0,14 30,14" stroke="#fff" stroke-width="3" />
-					<path id="stroke1" d="M0,23 30,23" stroke="#fff" stroke-width="3" />
-				</svg>
-			</a>
-		</span>
-
-
+	<nav class="navbar navbar-expand-lg navbar-light info-color">
+		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+				<li class="nav-item">
+					<a class="nav-link waves-effect waves-light" href="#products">Products</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link waves-effect waves-light" href="#vendors">Providers</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link waves-effect waves-light" href="#community">Community</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link waves-effect waves-light" href="https://github.com/cloudlibz/gsoc/wiki/Project-Ideas---GSoC-2019"
+					 target="_blank">GSoC</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link waves-effect waves-light" href="https://medium.com/cloudlibz"
+					 target="_blank">Blog</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 
+	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
 
-
-
-
-	<script>
-		function openSlideMenu() {
-			document.getElementById('side-menu').style.width = '250px';
-			document.getElementById('main').style.marginLeft = '250px';
-		}
-
-		function closeSlideMenu() {
-			document.getElementById('side-menu').style.width = '0';
-			document.getElementById('main').style.marginLeft = '0';
-		}
-
-		window.onscroll = function () {
-			myFunction()
-		};
-
-		var navbar = document.getElementById("bar");
-		var sticky = navbar.offsetTop;
-
-		function myFunction() {
-			if (window.pageYOffset >= sticky) {
-				navbar.classList.add("sticky")
-			} else {
-				navbar.classList.remove("sticky");
-			}
-		}
-	</script>
-
-	<div class="landing-fixed ">
-		<h1 class="heading-one">Cloudlibz</h1>
-		<h3 class="heading-tres">Unified Cloud, All the tools you need</h1>
-			<center><a href="#about" class="button">Know more</a></center>
+	<div class="logo-stripe">
+		<img class="logo-image" height="400" src="img/CL1.png">
 	</div>
+
 	<div class="subone-fixed">
-		<!-- <div class="subone-images">
-			<img src="img/vecone.png" class="image-one">
-			<img src="img/vectwo.png" class="image-two">
-		</div> -->
-		<div class="subone-text" id="about">
+		<div class="subone-text">
 			<div class="row">
 				<p class="para-two" align="center">
-					<font class="heading-two">What is CloudLibz ?</font>
 					<br />
 					<br /> CloudLibz focuses on building products around cloud.
 					<br /> It provides the necessary tools for you to be cloud savvy and makes
@@ -93,37 +58,60 @@
 	</div>
 	<div class="subtwo-fixed" id="products">
 		<font class="heading-two-two">Our Products</font>
-		<div class="row">
-			<div class="card">
-				<div class="card__info">
-					<h2 class="card__info_title">Nodecloud</h2>
-					<p class="card__info_text"> NodeCloud is a standard library written in Node.JS. to get a single API among common
-						cloud service providers (Ex. AWS, GCP, Azure.. ). This
-						will make building products among multiple cloud services and its services easier for the developer.</p>
+
+		<div class="container">
+			<div class="row products">
+				<div class="col-lg-6 product">
+					<div class="pr-name">
+						<a href="https://github.com/cloudlibz/nodecloud">NodeCloud</a>
+					</div>
+					<div class="pr-description">
+							NodeCloud is a standard library written in NodeJS to get a single API on the open cloud with multiple providers. Making open cloud easily accessible and managed.
+					</div>
+					<div class="pr-github">
+							<a href="https://github.com/cloudlibz/nodecloud"><i class="fa fa-3x fa-github"></i></a>
+					</div>
 				</div>
-				<figure class="card__image">
-					<img src="img/e.png">
-				</figure>
+				<div class="col-lg-6 product">
+					<div class="pr-name">
+						<a  href="https://github.com/cloudlibz/gocloud">GoCloud</a>
+					</div>
+					<div class="pr-description">
+							GoCloud is a golang library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, OpenStack etc.) and allows you to manage different cloud resources through a unified and easy to use API.
+					</div>
+					<div class="pr-github">
+							<a href="https://github.com/cloudlibz/gocloud"><i class="fa fa-3x fa-github"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-6 product">
+					<div class="pr-name">
+						<a href="https://github.com/cloudlibz/clocal-gcp">CLocal - GCP</a>
+					</div>
+					<div class="pr-description">
+						CLocal GCP emulates Google Cloud Platform services locally. Users can leverage the rest endpoints provided by the CLocal-GCP to mock the cloud API invocations. It uses the same interfaces provided by the GCP REST API.
+					</div>
+					<div class="pr-github">
+							<a href="https://github.com/cloudlibz/clocal-gcp"><i class="fa fa-3x fa-github"></i></a>
+					</div>
+				</div>
+				<div class="col-lg-6 product">
+					<div class="pr-name">
+						<a href="https://github.com/cloudlibz/clocal-azure">CLocal - Azure</a>
+					</div>
+					<div class="pr-description">
+							Clocal-Azure provides an easy-to-use test/mocking framework for developing Cloud applications. It emulates Azure services on the localhost.
+					</div>
+					<div class="pr-github">
+							<a href="https://github.com/cloudlibz/clocal-azure"><i class="fa fa-3x fa-github"></i></a>
+					</div>
+				</div>
 			</div>
 		</div>
-		<div class="row">
-			<div class="card">
-				<div class="card__info">
-					<h2 class="card__info_title">Gocloud</h2>
-					<p class="card__info_text"> GoCloud is a standard library written in GoLang to get a single API among common cloud
-						service providers (Ex. AWS, GCP, Azure.. ). This
-						will make building products among multiple cloud services and its services easier for the developer.</p>
-				</div>
-				<figure class="card__image">
-					<img src="img/d.png">
-				</figure>
-			</div>
-		</div>
-	</div>
+
 	</div>
 
 	<div class="subtwo-fixed" id="vendors">
-		<font class="heading-two-tres">Cloud providers unified by CloudLibz</font>
+		<font class="heading-two-tres">Providers unified by CloudLibz</font>
 		<br />
 		<div class="firstone">
 			<img src="img/l1.png" class="logoz onez">
@@ -138,7 +126,7 @@
 			<img src="img/l4.png" class="logoz fourz">
 		</div>
 		<div class="fiveone">
-			<img src="http://docs.alibabagroup.com/assets2/images/en/news/library_logos_aliyun_large.png" class="logoz fivez">
+			<img src="img/ali-cloud.png" class="logoz fivez">
 		</div>
 	</div>
 	</div>
@@ -153,8 +141,6 @@
 						<a href="https://gitter.im/cloudlibz/cloudlibz">
 							<img src="img/gitter.jpg" alt="">
 							<p>Gitter</p>
-
-
 						</a>
 
 
@@ -179,11 +165,36 @@
 
 		<footer align="center">
 			<p class="txt">
-				<br />&nbsp;&nbsp;&nbsp;CloudLibz.
 				<br />
-				<br />© Copyright 2018 Cloudlibz.
+				<br />© Copyright 2019 Cloudlibz.
 				<br />
 		</footer>
+		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+		<script>
+				if ($('#back-to-top').length) {
+					var scrollTrigger = 100, // px
+							backToTop = function () {
+									var scrollTop = $(window).scrollTop();
+									if (scrollTop > scrollTrigger) {
+											$('#back-to-top').addClass('show');
+									} else {
+											$('#back-to-top').removeClass('show');
+									}
+							};
+					backToTop();
+					$(window).on('scroll', function () {
+							backToTop();
+					});
+					$('#back-to-top').on('click', function (e) {
+							e.preventDefault();
+							$('html,body').animate({
+									scrollTop: 0
+							}, 700);
+					});
+			}
+		</script>
+
+		
 </body>
 
 </html>
