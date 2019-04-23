@@ -6,6 +6,18 @@
 	text-align: center;
 	background: #121c40;
 }
+.logo-stripe-2{
+	text-align: center;
+	background: #121c40;
+	height: 150px;
+	color: rgb(216, 216, 216);
+}
+
+.logo-stripe-2 h3{
+	padding-top: 50px;
+}
+
+
 
 .row-content {
 	margin: auto;
@@ -613,4 +625,26 @@ body{
 }
 #content {
 	height: 2000px;
+}
+
+.projects{
+	margin-top: 50px;
+	text-align: center;
+}
+.project{
+	margin: auto;
+	width: 60%;
+	text-align: center;
+}
+.project-title{
+	
+}
+.project-description{
+	text-align: left;
+}
+.project-description ul{
+	list-style-type: disc;
+}
+.project-description ul li{
+	display: list-item;
 }
