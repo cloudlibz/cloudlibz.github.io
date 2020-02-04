@@ -581,7 +581,7 @@ body{
 }
 
 .navbar-nav{
-	width: 45%;
+	/* width: 45%; */
 	margin: auto;
 	font-weight: bold;
 	font-size: 22px;
