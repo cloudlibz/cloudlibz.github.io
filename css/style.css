@@ -1,6 +1,7 @@
 *{
 	margin:0;
 	font-family:'Raleway',sans-serif;
+	scroll-behavior: smooth;
 }
 .logo-stripe{
 	text-align: center;
@@ -27,21 +28,15 @@ a{
 	text-decoration:none;
 }
 .button{
-  text-decoration:none;
-  color:white;
-  border:2px solid white;
-  padding-top:10px;
-  font-weight:bolder;
-  padding-bottom:10px;
-  padding-left:18px;
-  padding-right:18px;
-
-  font-size:18px;
-  text-transform:uppercase;
-
-  z-index:1;
-
-  }
+	text-decoration:none;
+	color:white;
+	border:2px solid white;
+	padding:10px 18px;
+	font-weight:bolder;
+	font-size:18px;
+	text-transform:uppercase;
+	z-index:1;
+}
 .button:after{
 	content: "";
 	position: absolute;
@@ -106,6 +101,7 @@ nav{
 }
 .image-two{
 	margin-left:-14%;
+	margin-left:-14%;
 }
 .subone-fixed{
 	margin-top:20%;
@@ -169,27 +165,36 @@ nav{
 	margin-left:100px;
 	color:#757575;
 }
-.fourz{
-	height:200px;
+.providers{
+	margin-top: 60px;
+	width: 100%;
+	height: fit-content;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	justify-content: space-evenly;
 }
-.fivez{
-	width:65%;
-	height:65%;
-	margin-top:35px;
+.providers img{
+	height: 45px;
+	transition: all 200ms ease-in-out;
+	cursor: pointer;
 }
-.fiveone{
-	margin-left:78%;
-	margin-top:-10.7%;
-}
-.fourthone{
-	margin-left:62%;
-	margin-top:-9.4%;
+.providers img:hover{
+	transform: scale(1.05);
 }
 .para-three{
     line-height:2; 
 	margin-left:100px;
 	margin-bottom:6px;
 	color:#757575;	
+}
+
+.social{
+	transition: all 200ms ease-in-out;
+}
+.social:hover{
+	transform: scale(1.05);
 }
 .card {
     display: block;
@@ -542,11 +547,14 @@ body{
 	margin-top: 40px;
 }
 .products .product {
-	padding: 10px;
-	transition: background 0.6s linear;
+	padding: 10px 30px 15px;
+	transition: all 0.6s linear;
+	cursor: pointer;
+	box-sizing: border-box;
+	overflow: hidden;
 }
 .products .product:hover {
-	background: #ededee;
+	background: #dbdbdb;
 	border-radius: 10px;
 }
 
@@ -558,13 +566,12 @@ body{
 }
 
 .products .product .pr-description{
-	text-align: center;
+	text-align: justify;
 	padding-bottom: 10px;
 }
 
 .products .product .pr-github{
-	padding-top: 30px;
-	padding-bottom: 40px;
+	padding: 20px 0 10px;
 	text-align: center;
 }
 
@@ -574,10 +581,8 @@ body{
 
 
 #main{
-  transition:margin-left 0.5s;
-
-  
-  width:100%;
+	transition:margin-left 0.5s;
+	width:100%;
 }
 
 .navbar-nav{
@@ -589,6 +594,10 @@ body{
 
 .nav-link{
 	padding-right: 1.5rem !important;
+}
+
+#vendors{
+	margin-top: 80px;
 }
 
 @media(max-width:568px){
