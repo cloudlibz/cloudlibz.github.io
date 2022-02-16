@@ -10,25 +10,28 @@
 </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light info-color">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
-			<ul class="navbar-nav mr-auto">
-				<li class="nav-item">
-					<a class="nav-link waves-effect waves-light" href="#products">Products</a>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<a class="navbar-brand" href="#">CloudLibz</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+			aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-link waves-effect waves-light">
+					<a class="nav-link" href="#products">Products</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link waves-effect waves-light" href="#vendors">Providers</a>
+				<li class="nav-link waves-effect waves-light">
+					<a class="nav-link" href="#vendors">Providers</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link waves-effect waves-light" href="#community">Community</a>
+				<li class="nav-link waves-effect waves-light">
+					<a class="nav-link" href="#community">Community</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link waves-effect waves-light" href="https://medium.com/cloudlibz"
-					 target="_blank">Blog</a>
+				<li class="nav-link waves-effect waves-light">
+					<a class="nav-link" href="https://medium.com/cloudlibz" target="_blank">Blog</a>
 				</li>
-				<li class="nav-item">
-					<a class="nav-link waves-effect waves-light" href="./gsoc.html"
-					 target="_blank">GSoC 2020</a>
+				<li class="nav-link waves-effect waves-light">
+					<a class="nav-link" href="./gsoc.html" target="_blank">GSoC 2020</a>
 				</li>
 			</ul>
 		</div>
@@ -66,21 +69,24 @@
 						<a href="https://github.com/cloudlibz/nodecloud">NodeCloud</a>
 					</div>
 					<div class="pr-description">
-							NodeCloud is a standard library written in NodeJS to get a single API on the open cloud with multiple providers. Making open cloud easily accessible and managed.
+						NodeCloud is a standard library written in NodeJS to get a single API on the open cloud with
+						multiple providers. Making open cloud easily accessible and managed.
 					</div>
 					<div class="pr-github">
-							<a href="https://github.com/cloudlibz/nodecloud"><i class="fa fa-3x fa-github"></i></a>
+						<a href="https://github.com/cloudlibz/nodecloud"><i class="fa fa-3x fa-github"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-6 product">
 					<div class="pr-name">
-						<a  href="https://github.com/cloudlibz/gocloud">GoCloud</a>
+						<a href="https://github.com/cloudlibz/gocloud">GoCloud</a>
 					</div>
 					<div class="pr-description">
-							GoCloud is a golang library which hides the difference between different APIs provided by varied cloud providers (AWS, GCP, OpenStack etc.) and allows you to manage different cloud resources through a unified and easy to use API.
+						GoCloud is a golang library which hides the difference between different APIs provided by varied
+						cloud providers (AWS, GCP, OpenStack etc.) and allows you to manage different cloud resources
+						through a unified and easy to use API.
 					</div>
 					<div class="pr-github">
-							<a href="https://github.com/cloudlibz/gocloud"><i class="fa fa-3x fa-github"></i></a>
+						<a href="https://github.com/cloudlibz/gocloud"><i class="fa fa-3x fa-github"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-6 product">
@@ -88,10 +94,12 @@
 						<a href="https://github.com/cloudlibz/clocal-gcp">CLocal - GCP</a>
 					</div>
 					<div class="pr-description">
-						CLocal GCP emulates Google Cloud Platform services locally. Users can leverage the rest endpoints provided by the CLocal-GCP to mock the cloud API invocations. It uses the same interfaces provided by the GCP REST API.
+						CLocal GCP emulates Google Cloud Platform services locally. Users can leverage the rest
+						endpoints provided by the CLocal-GCP to mock the cloud API invocations. It uses the same
+						interfaces provided by the GCP REST API.
 					</div>
 					<div class="pr-github">
-							<a href="https://github.com/cloudlibz/clocal-gcp"><i class="fa fa-3x fa-github"></i></a>
+						<a href="https://github.com/cloudlibz/clocal-gcp"><i class="fa fa-3x fa-github"></i></a>
 					</div>
 				</div>
 				<div class="col-lg-6 product">
@@ -99,10 +107,11 @@
 						<a href="https://github.com/cloudlibz/clocal-azure">CLocal - Azure</a>
 					</div>
 					<div class="pr-description">
-							Clocal-Azure provides an easy-to-use test/mocking framework for developing Cloud applications. It emulates Azure services on the localhost.
+						Clocal-Azure provides an easy-to-use test/mocking framework for developing Cloud applications.
+						It emulates Azure services on the localhost.
 					</div>
 					<div class="pr-github">
-							<a href="https://github.com/cloudlibz/clocal-azure"><i class="fa fa-3x fa-github"></i></a>
+						<a href="https://github.com/cloudlibz/clocal-azure"><i class="fa fa-3x fa-github"></i></a>
 					</div>
 				</div>
 			</div>
@@ -171,30 +180,31 @@
 		</footer>
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script>
-				if ($('#back-to-top').length) {
-					var scrollTrigger = 100, // px
-							backToTop = function () {
-									var scrollTop = $(window).scrollTop();
-									if (scrollTop > scrollTrigger) {
-											$('#back-to-top').addClass('show');
-									} else {
-											$('#back-to-top').removeClass('show');
-									}
-							};
+			if ($('#back-to-top').length) {
+				var scrollTrigger = 100, // px
+					backToTop = function () {
+						var scrollTop = $(window).scrollTop();
+						if (scrollTop > scrollTrigger) {
+							$('#back-to-top').addClass('show');
+						} else {
+							$('#back-to-top').removeClass('show');
+						}
+					};
+				backToTop();
+				$(window).on('scroll', function () {
 					backToTop();
-					$(window).on('scroll', function () {
-							backToTop();
-					});
-					$('#back-to-top').on('click', function (e) {
-							e.preventDefault();
-							$('html,body').animate({
-									scrollTop: 0
-							}, 700);
-					});
+				});
+				$('#back-to-top').on('click', function (e) {
+					e.preventDefault();
+					$('html,body').animate({
+						scrollTop: 0
+					}, 700);
+				});
 			}
 		</script>
+		<script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+		<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
 
-		
 </body>
 
 </html>
