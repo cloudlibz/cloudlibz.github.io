@@ -78,6 +78,11 @@ nav{
     padding-top: 53px;
     z-index: 10;
 }
+
+.navbar-collapse.in {
+    display: block !important;
+}
+
 .header-logo {
 	height: 70px;
     position: absolute;
