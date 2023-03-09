@@ -11,7 +11,9 @@
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light info-color">
-		<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<div class="navbar-collapse navbarSupportedContent" 
+		
+		>
 			<ul class="navbar-nav mr-auto">
 				<li class="nav-item">
 					<a class="nav-link waves-effect waves-light" href="#products">Products</a>
@@ -32,6 +34,10 @@
 				</li>
 			</ul>
 		</div>
+		<div class="menu-container" onclick="handleclick">
+			<img src="img/menu.png" alt="menu" class="menu-img" >
+		</div>
+
 	</nav>
 
 	<a href="#" id="back-to-top" title="Back to top">&uarr;</a>
@@ -171,6 +177,19 @@
 		</footer>
 		<script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
 		<script>
+			const menu_div = document.getElementsByClassName("menu-container");
+			const menu = document.getElementsByClassName("navbarSupportedContent");
+			function handleclick() {
+				console.log("1");
+				console.log(menu.classList);
+				if(menu[0].classList.contains("active")){
+					menu[0].classList.remove("active");
+				}
+				else{
+					menu[0].classList.add("active");
+				}
+			}
+			menu_div[0].addEventListener("click", handleclick);
 				if ($('#back-to-top').length) {
 					var scrollTrigger = 100, // px
 							backToTop = function () {
